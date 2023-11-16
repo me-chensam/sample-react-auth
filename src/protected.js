@@ -11,7 +11,7 @@ export default function Protected({ children }) {
   console.log(auth, token);
 
   if (!auth.user && !token) {
-    return <Navigate to="/login" state={{ from: location }} />
+    return <Navigate to="/sample-react-auth/login" state={{ from: location }} />
   }
 
   return children;

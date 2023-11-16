@@ -7,7 +7,7 @@ export default function Redirect({ path, children }) {
   const auth = useAuth();
 
   if (auth.user || secureLocalStorage.getItem('token'))
-    return <Navigate to={path ? path : "/"} />
+    return <Navigate to={path ? path : "/sample-react-auth"} />
 
   return children;
 }

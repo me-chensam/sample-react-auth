@@ -7,7 +7,7 @@ import Redirect from './redirect'
 
 const create_routers = createBrowserRouter([
   {
-    path: '/',
+    path: '/sample-react-auth',
     element: <Layout />,
     children: [
       {
@@ -21,7 +21,7 @@ const create_routers = createBrowserRouter([
     ]
   },
   {
-    path: 'login',
+    path: 'sample-react-auth/login',
     element: <Redirect>
       <Login />
     </Redirect>
